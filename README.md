@@ -8,8 +8,9 @@ cinsyc is released under GPL. Please fork it and/or improve it but give credits.
 
 Some scripts have a "#NOTE". Read the "#NOTE".
 
-First time, run scripts in this order: dochecksys.sh, sendwarnings.sh, dosendwarnings.sh
-Run scripts in this order: tarsyscollect.sh, dochecksys.sh, sendwarnings.sh, dosendwarnings.sh
+First time, run scripts in this order: dochecksys.sh, sendwarnings.sh, dosendwarnings.sh 
+
+Then run scripts in this order: tarsyscollect.sh, dochecksys.sh, sendwarnings.sh, dosendwarnings.sh
 
 
 checksys.sh:
