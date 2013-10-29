@@ -22,7 +22,6 @@ This is a list over servers that dochecksys.sh runs through a while-loop.
 
 tarsyscollect.sh:
 This is the script that tars all files in $PWD/syscollect and puts the tarball in $PWD/tarsyscollect in the format YYYYMM-DD.tar.xz.
-Dette er scriptet som tarer alle filer i $PWD/syscollect og legger tarballen i $PWD/tarsyscollect i format YYYYMM-DD.tar.xz.
 
 sshbulkcopyid_done.sh:
 This is the script that runs through servername.cfg to create SSH-based passwordless logons.
