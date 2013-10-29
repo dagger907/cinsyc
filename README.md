@@ -1,4 +1,5 @@
-This readme is for cinsyc(Cinsyc Is Not SysCollect): System information gathering through SSH for Ubuntu and Debian based systems.
+This readme is for cinsyc(Cinsyc Is Not SYsCollect): System information 
+gathering through SSH for Ubuntu and Debian based systems.
 
 cinsyc is a simple collection of BASH-scripts to collect system information. 
 
