@@ -33,15 +33,15 @@ printf "  Architecture:\t"$CPU"\n"
 cat /proc/cpuinfo | grep "model name\|processor" | awk '
 /processor/{printf "  Processor:\t" $3 " : " }
 /model\ name/{
-i=4
-while(i<=NF){
-	printf $i
-	if(i<NF){
-		printf " "
-	}
-	i++
-}
-printf "\n"
+	i=4
+		while(i<=NF){
+			printf $i
+				if(i<NF){
+					printf " "
+				}
+			i++
+		}
+	printf "\n"
 }'
 printf "  Date:\t\t"$DATE"\n"
 printf "\n<=== USER ===>\n"
@@ -65,7 +65,7 @@ echo "Updates/upgrades: "$UPDATES" "
 if [ -f $REREQ ];
 then
 echo "Server needs reboot."
-	else
+else
 echo "Server does not need reboot."
 fi
 
@@ -73,7 +73,7 @@ fi
 if [ -f $autoupgrades ];
 then
 echo	"Server has /etc/apt/apt.conf.d/20auto-upgrades"
-	else
+else
 echo	"Server does not have /etc/apt/apt.conf.d/20auto-upgrades"
 fi
 
@@ -81,7 +81,7 @@ fi
 if [ -f $periodic ];
 then
 echo "Server has /etc/apt/apt.conf.d/10periodic"
-	else
+else
 echo "Server does not have /etc/apt/apt.conf.d/10periodic"
 fi
 
