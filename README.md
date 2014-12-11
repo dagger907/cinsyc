@@ -1,4 +1,5 @@
-This readme is for cinsyc(Cinsyc Is Not SYsCollect): System information gathering through SSH for Ubuntu and Debian based systems. It should be easy to customize for most platforms that has BASH installed.
+This readme is for cinsyc(Cinsyc Is Not SYsCollect): System information gathering through SSH for Ubuntu and Debian based systems. It should be easy to customize for most platforms that has BASH installed. Using other shells than BASH is possible, just change the lines in scripts using bash specifically.
+
 
 cinsyc is a simple collection of BASH-scripts to collect system information. The goal was originally to collect useful information from servers using BASH only and making it as modular and minimalistic as possible, as well as easy to add more functionality.
 
@@ -10,11 +11,16 @@ Some scripts have a "#NOTE". Read the "#NOTE".
 
 Variable pathvar is used in the scripts, change value to the path to your sycollect-folder.
 
+To create passwordless logons, use sshbulkcopyid_done.sh. After the first run, just use ssh-copy-id per new server. Remember to add new servers to servername.cfg!
+
 First time, run scripts in this order: dochecksys.sh, sendwarnings.sh, dosendwarnings.sh 
 
 
 Then run scripts in this order: tarsyscollect.sh, dochecksys.sh, sendwarnings.sh, dosendwarnings.sh
 Or just run autoall.sh
+
+autoall.sh:
+Simply runs the scripts in the right order. Use this script to start the job. May be run manually or through cron.
 
 checksys.sh:
 This is the script that contains the code that is run on servers listed in servername.cfg.
